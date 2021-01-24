@@ -248,3 +248,5 @@ Perform these steps on `airflow`:
     hdfs namenode -format
     start-dfs.sh
     ```
+
+10. Confirm that the Hadoop Namenode is running and both Datanodes are found by visiting `http://airflow:9870/` in a browser.
