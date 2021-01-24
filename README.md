@@ -1,11 +1,16 @@
 # Overview
-These instructions explain how to create a three-node cluster running Python 3.8.5, Airflow 1.10.14, HDFS, Hive and Trino. This is a common data ingestion pipeline.
+These instructions explain how to create a three-node cluster running the following services, suited for use as a data ingestion pipeline:
+  - Python 3.8.5,
+  - Airflow 1.10.14,
+  - HDFS, 
+  - Hive,
+  - Trino. 
 
 The setup process is currently manual (using Vagrant to create the base images).
 
 The nodes are:
 
-| Node name | Purpose | Username (and password) |
+| Node name | Purpose | Username |
 | --- | --- | --- |
 | `airflow` | Airflow and Trino | `airflow` |
 | `hdfs-1` | HDFS | `hdfs` |
