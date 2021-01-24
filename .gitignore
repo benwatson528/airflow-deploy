@@ -43,3 +43,8 @@ gradle-app.setting
 
 # IDEA
 .idea/
+
+# Gradle
+gradle/
+gradlew
+gradlew.bat
