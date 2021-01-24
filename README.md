@@ -1,11 +1,15 @@
 # Overview
-These instructions explain how to create a three-node cluster:
+These instructions explain how to create a three-node cluster running Python 3.8.5, Airflow 1.10.14, HDFS, Hive and Trino. This is a common data ingestion pipeline.
+
+The setup process is currently manual (using Vagrant to create the base images).
+
+The nodes are:
 
 | Node name | Purpose | Username (and password) |
 | --- | --- | --- |
-| `airflow` | Host Airflow and Trino | `airflow` |
-| `hdfs-1` | Host HDFS | `hdfs` |
-| `hdfs-2` | Host HDFS | `hdfs` |
+| `airflow` | Airflow and Trino | `airflow` |
+| `hdfs-1` | HDFS | `hdfs` |
+| `hdfs-2` | HDFS | `hdfs` |
 
 # Setup VMs
 1. Install Vagrant.
@@ -99,3 +103,5 @@ On the `airflow` node:
     sudo supervisorctl reread
     sudo supervisorctl update
     ```
+
+5. Check that the Airflow webserver is running by visiting `10.0.0.10:8080` in a web browser.
